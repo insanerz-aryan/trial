@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing (if needed)..."
+  build:
+    commands:
+      - echo "Build phase — copying files to artifact"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: '.'   # path inside repo where built files live (change if using dist/)
